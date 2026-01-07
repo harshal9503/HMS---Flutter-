@@ -1,0 +1,81 @@
+import 'package:flutter/material.dart';
+import 'package:hms/screens/splash_screen.dart';
+import 'package:hms/screens/main_dashboard.dart';
+import 'package:hms/screens/module_login_screen.dart';
+import 'package:hms/screens/doctor/doctor_dashboard.dart';
+import 'package:hms/screens/reception/reception_dashboard.dart';
+import 'package:hms/utils/constants.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: AppConstants.appName,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: AppColors.primary,
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: AppColors.background,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColors.primary,
+          elevation: 0,
+          centerTitle: false,
+          titleTextStyle: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: Colors.white,
+          ),
+        ),
+        cardTheme: ThemeData.light().cardTheme.copyWith(
+              color: Colors.white,
+              elevation: 2,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppConstants.cardRadius),
+              ),
+            ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.secondary,
+            foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(AppConstants.buttonRadius),
+            ),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+          ),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(AppConstants.buttonRadius),
+            borderSide: const BorderSide(color: AppColors.border),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(AppConstants.buttonRadius),
+            borderSide: const BorderSide(color: AppColors.border),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(AppConstants.buttonRadius),
+            borderSide: const BorderSide(color: AppColors.secondary),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+          contentPadding: const EdgeInsets.all(16),
+        ),
+        useMaterial3: true,
+      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const SplashScreen(),
+        '/mainDashboard': (context) => const MainDashboard(),
+        '/moduleLogin': (context) => const ModuleLoginScreen(module: 'Doctor'),
+        '/doctorDashboard': (context) => const DoctorDashboard(),
+        '/receptionDashboard': (context) => const ReceptionDashboard(),
+      },
+    );
+  }
+}
