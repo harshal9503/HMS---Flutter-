@@ -70,7 +70,19 @@ hms/
 │   │   │   ├── admin_profile.dart              # NEW: Patient profile
 │   │   │   └── patient_settings.dart           # NEW: Settings
 │   │   ├── admin/                      # NEW FOLDER
-│   │   │   └── admin_dashboard.dart    # NEW
+│   │   │   components/                   # Admin components folder
+│   │   │   │   ├── staff_list_screen.dart
+│   │   │   │   ├── shift_management.dart
+│   │   │   │   ├── multi_hospital_support.dart
+│   │   │   │   ├── roles_permissions.dart
+│   │   │   │   ├── medicines_screen.dart
+│   │   │   │   ├── equipment_screen.dart
+│   │   │   │   ├── billing_rate_master.dart
+│   │   │   │   ├── document_templates.dart
+│   │   │   │   ├── analytics_reports.dart
+│   │   │   │   ├── audit_logs.dart
+│   │   │   │   └── admin_profile.dart
+                └── settings_screen.dart
 │   │   ├── insurance/                  # NEW FOLDER
 │   │   │   └── insurance_dashboard.dart # NEW
 │   │   ├── diagnostics/

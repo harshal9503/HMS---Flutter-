@@ -168,7 +168,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
               children: [
                 // Header with Logo
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                   child: Row(
                     children: [
                       Container(
@@ -234,8 +235,10 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                _buildSidebarItem('OPD / IPD Appointments', Icons.event_note_outlined),
-                _buildSidebarItem('Telecommunication', Icons.video_call_outlined),
+                _buildSidebarItem(
+                    'OPD / IPD Appointments', Icons.event_note_outlined),
+                _buildSidebarItem(
+                    'Telecommunication', Icons.video_call_outlined),
 
                 const SizedBox(height: 30),
 
@@ -253,7 +256,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                _buildSidebarItem('E-Prescriptions', Icons.description_outlined),
+                _buildSidebarItem(
+                    'E-Prescriptions', Icons.description_outlined),
                 _buildSidebarItem('Lab Test Request', Icons.science_outlined),
                 _buildSidebarItem('Patient History', Icons.history_outlined),
 
@@ -273,11 +277,13 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                _buildSidebarItem('IPD Management', Icons.local_hospital_outlined),
-                _buildSidebarItem('Discharge Summary', Icons.exit_to_app_outlined),
+                _buildSidebarItem(
+                    'IPD Management', Icons.local_hospital_outlined),
+                _buildSidebarItem(
+                    'Discharge Summary', Icons.exit_to_app_outlined),
                 _buildSidebarItem('Doctor profile', Icons.person_outlined),
                 _buildSidebarItem('Setting', Icons.settings_outlined),
-                
+
                 const SizedBox(height: 20),
               ],
             ),
@@ -305,7 +311,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                       color: const Color(0xFF2383E2).withOpacity(0.1),
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    child: const Icon(Icons.person, 
+                    child: const Icon(
+                      Icons.person,
                       color: Color(0xFF2383E2),
                       size: 24,
                     ),
@@ -366,8 +373,7 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                       child: Row(
                         children: [
                           Icon(Icons.logout,
-                              color: Colors.grey.shade600, 
-                              size: 22),
+                              color: Colors.grey.shade600, size: 22),
                           const SizedBox(width: 15),
                           const Text(
                             'Logout',
@@ -438,7 +444,7 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
   Widget _buildSelectedContent() {
     final screenWidth = MediaQuery.of(context).size.width;
     final isMobile = screenWidth < 768;
-    
+
     // Return the selected screen content
     switch (_selectedNavItem) {
       case 'Dashboard':
@@ -787,18 +793,18 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  
+
                   const SizedBox(height: 12),
-                  
+
                   // Second row: Mic icon only
                   const Icon(
                     Icons.mic_none_rounded,
                     size: 50,
                     color: Colors.white,
                   ),
-                  
+
                   const SizedBox(height: 12),
-                  
+
                   // Third row: "TAP to start voice entry" text
                   const Text(
                     'TAP to start voice entry',
@@ -856,7 +862,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                 color: const Color(0xFF2383E2).withOpacity(0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
-              child: Icon(Icons.person, color: const Color(0xFF2383E2), size: 22),
+              child:
+                  Icon(Icons.person, color: const Color(0xFF2383E2), size: 22),
             ),
             const SizedBox(width: 12),
             Expanded(
@@ -994,8 +1001,9 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
               decoration: BoxDecoration(
                 color: const Color(0xFF2383E2).withOpacity(0.1),
                 borderRadius: BorderRadius.circular(18),
-            ),
-              child: const Icon(Icons.person, color: Color(0xFF2383E2), size: 20),
+              ),
+              child:
+                  const Icon(Icons.person, color: Color(0xFF2383E2), size: 20),
             ),
             const SizedBox(width: 12),
             Expanded(
@@ -1025,7 +1033,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     color: const Color(0xFF38A169).withOpacity(0.1),
                     borderRadius: BorderRadius.circular(4),
@@ -1277,7 +1286,7 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
                 color: Color(0xFF2D3748),
-            ),
+              ),
             ),
             const SizedBox(height: 6),
             Text(
@@ -1525,7 +1534,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                       color: const Color(0xFF2383E2).withOpacity(0.1),
                       borderRadius: BorderRadius.circular(18),
                     ),
-                    child: const Icon(Icons.person, color: Color(0xFF2383E2), size: 20),
+                    child: const Icon(Icons.person,
+                        color: Color(0xFF2383E2), size: 20),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -1559,7 +1569,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF2383E2),
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 8),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),
@@ -1622,7 +1633,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('AI RMO Assistant'),
-        content: const Text('Voice assistant functionality will be implemented here.'),
+        content: const Text(
+            'Voice assistant functionality will be implemented here.'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
