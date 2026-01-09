@@ -1105,7 +1105,7 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
 
           // IPD Vitals - Make scrollable
           ConstrainedBox(
-            constraints: const BoxConstraints(maxHeight: 300),
+            constraints: const BoxConstraints(maxHeight: 400),
             child: SingleChildScrollView(
               child: Column(
                 children: [
