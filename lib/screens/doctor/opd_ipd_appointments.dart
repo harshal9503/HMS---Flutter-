@@ -399,7 +399,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
               label: SizedBox(
                 width: isTablet ? 140 : 160, // Increased width
                 child: Padding(
-                  padding: EdgeInsets.only(left: isTablet ? 20 : 25), // Increased left padding
+                  padding: EdgeInsets.only(
+                      left: isTablet ? 20 : 25), // Increased left padding
                   child: const Text(
                     'Time',
                     overflow: TextOverflow.ellipsis,
@@ -411,7 +412,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
               label: SizedBox(
                 width: isTablet ? 220 : 260, // Increased width
                 child: Padding(
-                  padding: EdgeInsets.only(left: isTablet ? 20 : 25), // Increased left padding
+                  padding: EdgeInsets.only(
+                      left: isTablet ? 20 : 25), // Increased left padding
                   child: const Text(
                     'Patient',
                     overflow: TextOverflow.ellipsis,
@@ -423,7 +425,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
               label: SizedBox(
                 width: isTablet ? 140 : 160, // Increased width
                 child: Padding(
-                  padding: EdgeInsets.only(left: isTablet ? 20 : 25), // Increased left padding
+                  padding: EdgeInsets.only(
+                      left: isTablet ? 20 : 25), // Increased left padding
                   child: const Text(
                     'Details',
                     overflow: TextOverflow.ellipsis,
@@ -435,7 +438,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
               label: SizedBox(
                 width: isTablet ? 260 : 300, // Increased width
                 child: Padding(
-                  padding: EdgeInsets.only(left: isTablet ? 20 : 25), // Increased left padding
+                  padding: EdgeInsets.only(
+                      left: isTablet ? 20 : 25), // Increased left padding
                   child: const Text(
                     'Action',
                     overflow: TextOverflow.ellipsis,
@@ -485,7 +489,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                             height: 42, // Increased size
                             decoration: BoxDecoration(
                               color: const Color(0xFF2383E2),
-                              borderRadius: BorderRadius.circular(10), // Increased radius
+                              borderRadius:
+                                  BorderRadius.circular(10), // Increased radius
                             ),
                             child: Center(
                               child: Text(
@@ -510,7 +515,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                   Text(
                                     patient['name'],
                                     style: TextStyle(
-                                      fontSize: isTablet ? 13 : 14, // Increased font
+                                      fontSize:
+                                          isTablet ? 13 : 14, // Increased font
                                       fontWeight: FontWeight.w600,
                                       color: const Color(0xFF2D3748),
                                     ),
@@ -521,7 +527,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                   Text(
                                     'ID: ${patient['id']}',
                                     style: TextStyle(
-                                      fontSize: isTablet ? 12 : 13, // Increased font
+                                      fontSize:
+                                          isTablet ? 12 : 13, // Increased font
                                       color: const Color(0xFF718096),
                                     ),
                                     overflow: TextOverflow.ellipsis,
@@ -605,7 +612,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                   vertical: 8, // Increased padding
                                 ),
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8), // Increased radius
+                                  borderRadius: BorderRadius.circular(
+                                      8), // Increased radius
                                 ),
                                 elevation: 0,
                               ),
@@ -621,7 +629,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                   Text(
                                     'Admit',
                                     style: TextStyle(
-                                      fontSize: isTablet ? 13 : 14, // Increased font
+                                      fontSize:
+                                          isTablet ? 13 : 14, // Increased font
                                       fontWeight: FontWeight.w600,
                                       color: Colors.white,
                                     ),
@@ -631,7 +640,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                               ),
                             ),
                           ),
-                          SizedBox(width: isTablet ? 16 : 20), // Increased spacing
+                          SizedBox(
+                              width: isTablet ? 16 : 20), // Increased spacing
 
                           // Discharge Button
                           SizedBox(
@@ -646,7 +656,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                   vertical: 8, // Increased padding
                                 ),
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8), // Increased radius
+                                  borderRadius: BorderRadius.circular(
+                                      8), // Increased radius
                                 ),
                                 elevation: 0,
                               ),
@@ -662,7 +673,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                   Text(
                                     'Discharge',
                                     style: TextStyle(
-                                      fontSize: isTablet ? 13 : 14, // Increased font
+                                      fontSize:
+                                          isTablet ? 13 : 14, // Increased font
                                       fontWeight: FontWeight.w600,
                                       color: Colors.white,
                                     ),
@@ -733,7 +745,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                       height: 42, // Increased size
                       decoration: BoxDecoration(
                         color: const Color(0xFF2383E2),
-                        borderRadius: BorderRadius.circular(10), // Increased radius
+                        borderRadius:
+                            BorderRadius.circular(10), // Increased radius
                       ),
                       child: Center(
                         child: Text(
@@ -794,7 +807,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                       Expanded(
                         child: Container(
                           height: 32, // Increased height
-                          margin: const EdgeInsets.only(right: 8), // Increased margin
+                          margin: const EdgeInsets.only(
+                              right: 8), // Increased margin
                           child: ElevatedButton(
                             onPressed: () => _admitPatient(patient),
                             style: ElevatedButton.styleFrom(
@@ -804,7 +818,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                 vertical: 8, // Increased padding
                               ),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8), // Increased radius
+                                borderRadius: BorderRadius.circular(
+                                    8), // Increased radius
                               ),
                               elevation: 0,
                             ),
@@ -845,7 +860,8 @@ class _OpdIpdAppointmentsState extends State<OpdIpdAppointments> {
                                 vertical: 8, // Increased padding
                               ),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8), // Increased radius
+                                borderRadius: BorderRadius.circular(
+                                    8), // Increased radius
                               ),
                               elevation: 0,
                             ),

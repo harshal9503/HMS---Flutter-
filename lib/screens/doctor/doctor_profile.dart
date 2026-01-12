@@ -7,15 +7,6 @@ class DoctorProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F8FA),
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: const Color(0xFF2383E2),
-        leading: const BackButton(color: Colors.white),
-        title: const Text(
-          'Doctor Profile',
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -186,8 +177,8 @@ class DoctorProfile extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 12, vertical: 6),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
                       color: badgeColor,
                       borderRadius: BorderRadius.circular(12),
