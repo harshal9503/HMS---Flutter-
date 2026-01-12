@@ -15,7 +15,7 @@ class _LabTestRequestState extends State<LabTestRequest> {
   final TextEditingController _searchController = TextEditingController();
   final List<Map<String, dynamic>> _testRequests = [
     {
-      'testName': 'Lipid profile',
+      'testName': 'Lipid Profile',
       'category': 'Hematology',
       'patient': 'John Smith',
       'date': '12/01/2025',
@@ -23,51 +23,211 @@ class _LabTestRequestState extends State<LabTestRequest> {
       'status': 'Completed',
     },
     {
-      'testName': 'Lipid profile',
-      'category': 'Hematology',
-      'patient': 'John Smith',
-      'date': '12/01/2025',
+      'testName': 'Blood Glucose',
+      'category': 'Biochemistry',
+      'patient': 'Sarah Johnson',
+      'date': '11/01/2025',
       'priority': 'Routine',
       'status': 'Completed',
     },
     {
-      'testName': 'Lipid profile',
+      'testName': 'CBC',
       'category': 'Hematology',
-      'patient': 'John Smith',
-      'date': '12/01/2025',
+      'patient': 'Michael Brown',
+      'date': '13/01/2025',
       'priority': 'Routine',
       'status': 'Completed',
     },
     {
-      'testName': 'Lipid profile',
-      'category': 'Hematology',
-      'patient': 'John Smith',
-      'date': '12/01/2025',
+      'testName': 'Liver Function',
+      'category': 'Biochemistry',
+      'patient': 'Emily Davis',
+      'date': '10/01/2025',
       'priority': 'Urgent',
       'status': 'Waiting',
     },
     {
-      'testName': 'Lipid profile',
-      'category': 'Hematology',
-      'patient': 'John Smith',
-      'date': '12/01/2025',
+      'testName': 'Thyroid Profile',
+      'category': 'Endocrinology',
+      'patient': 'Robert Wilson',
+      'date': '14/01/2025',
       'priority': 'Routine',
       'status': 'Completed',
     },
     {
-      'testName': 'Lipid profile',
-      'category': 'Hematology',
-      'patient': 'John Smith',
-      'date': '12/01/2025',
+      'testName': 'Urine Analysis',
+      'category': 'Pathology',
+      'patient': 'Lisa Anderson',
+      'date': '09/01/2025',
       'priority': 'Routine',
       'status': 'Completed',
     },
     {
-      'testName': 'Lipid profile',
-      'category': 'Hematology',
-      'patient': 'John Smith',
-      'date': '12/01/2025',
+      'testName': 'Kidney Function',
+      'category': 'Nephrology',
+      'patient': 'David Miller',
+      'date': '15/01/2025',
       'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'HbA1c Test',
+      'category': 'Endocrinology',
+      'patient': 'James Taylor',
+      'date': '16/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Vitamin D',
+      'category': 'Biochemistry',
+      'patient': 'Maria Garcia',
+      'date': '17/01/2025',
+      'priority': 'Routine',
+      'status': 'Waiting',
+    },
+    {
+      'testName': 'Cardiac Enzymes',
+      'category': 'Cardiology',
+      'patient': 'William Lee',
+      'date': '18/01/2025',
+      'priority': 'Urgent',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'PSA Test',
+      'category': 'Urology',
+      'patient': 'Richard Clark',
+      'date': '19/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Stool Culture',
+      'category': 'Microbiology',
+      'patient': 'Patricia Lewis',
+      'date': '20/01/2025',
+      'priority': 'Routine',
+      'status': 'Waiting',
+    },
+    {
+      'testName': 'Pregnancy Test',
+      'category': 'Obstetrics',
+      'patient': 'Jennifer Walker',
+      'date': '21/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'HIV Test',
+      'category': 'Immunology',
+      'patient': 'Thomas Hall',
+      'date': '22/01/2025',
+      'priority': 'Urgent',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Allergy Panel',
+      'category': 'Immunology',
+      'patient': 'Susan Young',
+      'date': '23/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Cortisol Test',
+      'category': 'Endocrinology',
+      'patient': 'Charles King',
+      'date': '24/01/2025',
+      'priority': 'Routine',
+      'status': 'Waiting',
+    },
+    {
+      'testName': 'Coagulation Profile',
+      'category': 'Hematology',
+      'patient': 'Jessica Wright',
+      'date': '25/01/2025',
+      'priority': 'Urgent',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Sputum Culture',
+      'category': 'Microbiology',
+      'patient': 'Daniel Scott',
+      'date': '26/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Bone Profile',
+      'category': 'Rheumatology',
+      'patient': 'Karen Green',
+      'date': '27/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Iron Studies',
+      'category': 'Hematology',
+      'patient': 'Paul Adams',
+      'date': '28/01/2025',
+      'priority': 'Routine',
+      'status': 'Waiting',
+    },
+    {
+      'testName': 'Lipase Test',
+      'category': 'Gastroenterology',
+      'patient': 'Nancy Baker',
+      'date': '29/01/2025',
+      'priority': 'Urgent',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'CRP Test',
+      'category': 'Immunology',
+      'patient': 'Mark Carter',
+      'date': '30/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Prolactin Test',
+      'category': 'Endocrinology',
+      'patient': 'Laura Phillips',
+      'date': '31/01/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Amylase Test',
+      'category': 'Gastroenterology',
+      'patient': 'Steven Evans',
+      'date': '01/02/2025',
+      'priority': 'Routine',
+      'status': 'Waiting',
+    },
+    {
+      'testName': 'Tumor Markers',
+      'category': 'Oncology',
+      'patient': 'Donna Turner',
+      'date': '02/02/2025',
+      'priority': 'Urgent',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'Drug Screening',
+      'category': 'Toxicology',
+      'patient': 'Kevin Parker',
+      'date': '03/02/2025',
+      'priority': 'Routine',
+      'status': 'Completed',
+    },
+    {
+      'testName': 'CSF Analysis',
+      'category': 'Neurology',
+      'patient': 'Amanda Collins',
+      'date': '04/02/2025',
+      'priority': 'Urgent',
       'status': 'Completed',
     },
   ];
@@ -111,88 +271,6 @@ class _LabTestRequestState extends State<LabTestRequest> {
       body: SafeArea(
         child: Column(
           children: [
-            // Top Bar - AppBar style
-            Container(
-              height: 70,
-              color: const Color(0xFF2383E2),
-              padding: EdgeInsets.symmetric(
-                horizontal: isMobile
-                    ? 8
-                    : isTablet
-                        ? 16
-                        : 20,
-              ),
-              child: Row(
-                children: [
-                  // Back Button
-                  Container(
-                    width: 50,
-                    alignment: Alignment.centerLeft,
-                    child: IconButton(
-                      icon: const Icon(Icons.arrow_back,
-                          color: Colors.white, size: 24),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                    ),
-                  ),
-
-                  // Title
-                  const Expanded(
-                    child: Text(
-                      'Lab Test Request',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-
-                  // Voice assistance pill (only for desktop)
-                  if (!isMobile && !isTablet)
-                    Container(
-                      height: 44,
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.2),
-                        borderRadius: BorderRadius.circular(999),
-                        border:
-                            Border.all(color: Colors.white.withOpacity(0.3)),
-                      ),
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 32,
-                            height: 32,
-                            decoration: const BoxDecoration(
-                              color: Colors.white,
-                              shape: BoxShape.circle,
-                            ),
-                            child: const Icon(
-                              Icons.mic_none_rounded,
-                              size: 18,
-                              color: Color(0xFF2383E2),
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          const Text(
-                            'Voice assistance',
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                ],
-              ),
-            ),
-
             // Main Content Area
             Expanded(
               child: _buildMainContent(isMobile, isTablet),
@@ -208,92 +286,10 @@ class _LabTestRequestState extends State<LabTestRequest> {
       color: const Color(0xFFF7FAFC),
       child: Column(
         children: [
-          // Greeting and date section
-          Container(
-            height: 70,
-            color: Colors.white,
-            padding: EdgeInsets.symmetric(
-              horizontal: isMobile
-                  ? 16
-                  : isTablet
-                      ? 24
-                      : 30,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                // Greeting and date
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Good morning, Dr. Anderson',
-                        style: TextStyle(
-                          fontSize: isMobile ? 16 : 18,
-                          fontWeight: FontWeight.w600,
-                          color: const Color(0xFF2D3748),
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Today 24 Dec., Monday',
-                        style: TextStyle(
-                          fontSize: isMobile ? 12 : 14,
-                          color: const Color(0xFF718096),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-
-                // Add new staff button (only on desktop/tablet)
-                if (!isMobile)
-                  Container(
-                    height: 44,
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        _showAddTestRequestForm();
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF2383E2),
-                        padding: EdgeInsets.symmetric(
-                          horizontal: isTablet ? 16 : 20,
-                          vertical: 12,
-                        ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        elevation: 0,
-                      ),
-                      icon: const Icon(
-                        Icons.add,
-                        size: 20,
-                        color: Colors.white,
-                      ),
-                      label: Text(
-                        'Add new staff',
-                        style: TextStyle(
-                          fontSize: isTablet ? 13 : 14,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          ),
-
-          // Divider
-          Container(height: 1, color: const Color(0xFFE2E8F0)),
-
           // Main Content
           Expanded(
             child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
               child: Container(
                 padding: EdgeInsets.all(
                   isMobile
@@ -315,73 +311,25 @@ class _LabTestRequestState extends State<LabTestRequest> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Header with breadcrumb and add button for mobile
-        if (isMobile) ...[
+        // Header with breadcrumb
+        if (!isMobile)
           const Text(
-            'CLINICAL RECORDS >> Lab Test Request',
+            'LAB Results',
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 18,
               fontWeight: FontWeight.w600,
               color: Color(0xFF718096),
             ),
           ),
-          const SizedBox(height: 12),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              // Add new staff button for mobile
-              Expanded(
-                child: Container(
-                  margin: const EdgeInsets.only(right: 8),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      _showAddTestRequestForm();
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF2383E2),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 8,
-                      ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(6),
-                      ),
-                      elevation: 0,
-                    ),
-                    icon: const Icon(
-                      Icons.add,
-                      size: 14,
-                      color: Colors.white,
-                    ),
-                    label: const Text(
-                      'Add new staff',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
 
-        // Desktop header
-        if (!isMobile)
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
-                'CLINICAL RECORDS >> Lab Test Request',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xFF718096),
-                ),
-              ),
-            ],
+        if (isMobile)
+          const Text(
+            'LAB TEST REQUEST',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+              color: Color(0xFF718096),
+            ),
           ),
 
         const SizedBox(height: 20),
@@ -410,7 +358,7 @@ class _LabTestRequestState extends State<LabTestRequest> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Staff members',
+                'Test Requests',
                 style: TextStyle(
                   fontSize: isMobile ? 16 : 18,
                   fontWeight: FontWeight.bold,
@@ -463,7 +411,7 @@ class _LabTestRequestState extends State<LabTestRequest> {
                     ),
                     style: const TextStyle(
                       fontSize: 14,
-                      color: Color(0xFF2D3748),
+                      color: const Color(0xFF2D3748),
                     ),
                     onChanged: (value) {
                       setState(() {});
@@ -484,7 +432,19 @@ class _LabTestRequestState extends State<LabTestRequest> {
                   setState(() {
                     _selectedFilter = value!;
                   });
-                }, ['All', 'Lipid profile'], isMobile),
+                }, [
+                  'All',
+                  'Lipid Profile',
+                  'Blood Glucose',
+                  'CBC',
+                  'Liver Function',
+                  'Thyroid Profile',
+                  'Urine Analysis',
+                  'Kidney Function',
+                  'HbA1c Test',
+                  'Vitamin D',
+                  'Cardiac Enzymes'
+                ], isMobile),
                 const SizedBox(width: 8),
                 _buildFilterDropdown('Priority', _selectedPriority, (value) {
                   setState(() {
@@ -620,7 +580,19 @@ class _LabTestRequestState extends State<LabTestRequest> {
                   setState(() {
                     _selectedFilter = value!;
                   });
-                }, ['All', 'Lipid profile'], isMobile),
+                }, [
+                  'All',
+                  'Lipid Profile',
+                  'Blood Glucose',
+                  'CBC',
+                  'Liver Function',
+                  'Thyroid Profile',
+                  'Urine Analysis',
+                  'Kidney Function',
+                  'HbA1c Test',
+                  'Vitamin D',
+                  'Cardiac Enzymes'
+                ], isMobile),
               ),
               const SizedBox(width: 12),
 
@@ -746,7 +718,10 @@ class _LabTestRequestState extends State<LabTestRequest> {
         items: items.map<DropdownMenuItem<String>>((String value) {
           return DropdownMenuItem<String>(
             value: value,
-            child: Text(value),
+            child: Text(
+              value,
+              overflow: TextOverflow.ellipsis,
+            ),
           );
         }).toList(),
         hint: Text(
@@ -755,6 +730,7 @@ class _LabTestRequestState extends State<LabTestRequest> {
             fontSize: isMobile ? 12 : 13,
             color: const Color(0xFF718096),
           ),
+          overflow: TextOverflow.ellipsis,
         ),
       ),
     );
@@ -762,166 +738,188 @@ class _LabTestRequestState extends State<LabTestRequest> {
 
   Widget _buildDesktopTestRequestsTable(bool isTablet) {
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
+      physics: const BouncingScrollPhysics(),
       child: Container(
-        constraints: BoxConstraints(
-          minWidth: MediaQuery.of(context).size.width - 48,
-        ),
+        width: double.infinity,
         child: DataTable(
-          columnSpacing: isTablet ? 16.0 : 24.0,
-          headingRowHeight: 50,
+          columnSpacing: isTablet ? 12.0 : 16.0,
+          headingRowHeight: 40,
           headingRowColor: MaterialStateProperty.all(const Color(0xFFF7FAFC)),
           headingTextStyle: TextStyle(
-            fontSize: isTablet ? 11 : 12,
+            fontSize: isTablet ? 12 : 13,
             fontWeight: FontWeight.w600,
             color: const Color(0xFF4A5568),
           ),
-          dataRowHeight: 60,
+          dataRowHeight: 50,
           columns: [
             DataColumn(
-                label: SizedBox(
-                    width: isTablet ? 120 : 150,
-                    child: const Text('Test name'))),
+              label: Container(
+                width: isTablet ? 120 : 140,
+                child: const Text('Test name', overflow: TextOverflow.ellipsis),
+              ),
+            ),
             DataColumn(
-                label: SizedBox(
-                    width: isTablet ? 100 : 120,
-                    child: const Text('Category'))),
+              label: Container(
+                width: isTablet ? 100 : 120,
+                child: const Text('Category', overflow: TextOverflow.ellipsis),
+              ),
+            ),
             DataColumn(
-                label: SizedBox(
-                    width: isTablet ? 100 : 120, child: const Text('Patient'))),
+              label: Container(
+                width: isTablet ? 100 : 120,
+                child: const Text('Patient', overflow: TextOverflow.ellipsis),
+              ),
+            ),
             DataColumn(
-                label: SizedBox(
-                    width: isTablet ? 80 : 100, child: const Text('Date'))),
+              label: Container(
+                width: isTablet ? 80 : 90,
+                child: const Text('Date', overflow: TextOverflow.ellipsis),
+              ),
+            ),
             DataColumn(
-                label: SizedBox(
-                    width: isTablet ? 80 : 100, child: const Text('Priority'))),
+              label: Container(
+                width: isTablet ? 80 : 90,
+                child: const Text('Priority', overflow: TextOverflow.ellipsis),
+              ),
+            ),
             DataColumn(
-                label: SizedBox(
-                    width: isTablet ? 80 : 100, child: const Text('Status'))),
+              label: Container(
+                width: isTablet ? 80 : 90,
+                child: const Text('Status', overflow: TextOverflow.ellipsis),
+              ),
+            ),
             DataColumn(
-                label: SizedBox(
-                    width: isTablet ? 200 : 220, child: const Text('Action'))),
+              label: Container(
+                width: isTablet ? 140 : 160,
+                child: const Text('Actions', overflow: TextOverflow.ellipsis),
+              ),
+            ),
           ],
           rows: _filteredRequests.map((request) {
             return DataRow(
               cells: [
                 DataCell(
-                  SizedBox(
-                    width: isTablet ? 120 : 150,
+                  Container(
+                    width: isTablet ? 120 : 140,
                     child: Text(
                       request['testName'],
                       style: TextStyle(
-                        fontSize: isTablet ? 11 : 12,
+                        fontSize: isTablet ? 12 : 13,
                         color: const Color(0xFF2D3748),
                       ),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ),
                 DataCell(
-                  SizedBox(
+                  Container(
                     width: isTablet ? 100 : 120,
                     child: Text(
                       request['category'],
                       style: TextStyle(
-                        fontSize: isTablet ? 11 : 12,
+                        fontSize: isTablet ? 12 : 13,
                         color: const Color(0xFF2D3748),
                       ),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ),
                 DataCell(
-                  SizedBox(
+                  Container(
                     width: isTablet ? 100 : 120,
                     child: Text(
                       request['patient'],
                       style: TextStyle(
-                        fontSize: isTablet ? 11 : 12,
+                        fontSize: isTablet ? 12 : 13,
                         color: const Color(0xFF2D3748),
                       ),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ),
                 DataCell(
-                  SizedBox(
-                    width: isTablet ? 80 : 100,
+                  Container(
+                    width: isTablet ? 80 : 90,
                     child: Text(
                       request['date'],
                       style: TextStyle(
-                        fontSize: isTablet ? 11 : 12,
+                        fontSize: isTablet ? 12 : 13,
                         color: const Color(0xFF718096),
                       ),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ),
                 DataCell(
-                  SizedBox(
-                    width: isTablet ? 80 : 100,
+                  Container(
+                    width: isTablet ? 80 : 90,
                     child: Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 8, vertical: 4),
+                          horizontal: 6, vertical: 3),
                       decoration: BoxDecoration(
                         color: _getPriorityColor(request['priority'])
                             .withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
                         request['priority'],
                         style: TextStyle(
-                          fontSize: isTablet ? 9 : 10,
+                          fontSize: isTablet ? 10 : 11,
                           color: _getPriorityColor(request['priority']),
                           fontWeight: FontWeight.w500,
                         ),
-                      ),
-                    ),
-                  ),
-                ),
-                DataCell(
-                  SizedBox(
-                    width: isTablet ? 80 : 100,
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 8, vertical: 4),
-                      decoration: BoxDecoration(
-                        color:
-                            _getStatusColor(request['status']).withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Text(
-                        request['status'],
-                        style: TextStyle(
-                          fontSize: isTablet ? 9 : 10,
-                          color: _getStatusColor(request['status']),
-                          fontWeight: FontWeight.w500,
-                        ),
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ),
                   ),
                 ),
                 DataCell(
                   Container(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    width: isTablet ? 200 : 220,
+                    width: isTablet ? 80 : 90,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 6, vertical: 3),
+                      decoration: BoxDecoration(
+                        color:
+                            _getStatusColor(request['status']).withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        request['status'],
+                        style: TextStyle(
+                          fontSize: isTablet ? 10 : 11,
+                          color: _getStatusColor(request['status']),
+                          fontWeight: FontWeight.w500,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ),
+                ),
+                DataCell(
+                  Container(
+                    width: isTablet ? 140 : 160,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         // View Button - Icon only
                         Container(
-                          height: 28,
-                          margin: const EdgeInsets.only(right: 6),
+                          height: 26,
+                          margin: const EdgeInsets.only(right: 4),
                           child: IconButton(
                             onPressed: () => _viewTestRequest(request),
                             icon: Icon(
                               Icons.visibility,
-                              size: 16,
+                              size: 14,
                               color: const Color(0xFF38A169),
                             ),
                             style: IconButton.styleFrom(
-                              padding: const EdgeInsets.all(6),
+                              padding: const EdgeInsets.all(5),
                               backgroundColor:
                                   const Color(0xFF38A169).withOpacity(0.1),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6),
+                                borderRadius: BorderRadius.circular(5),
                                 side: BorderSide(
                                   color:
                                       const Color(0xFF38A169).withOpacity(0.3),
@@ -934,21 +932,21 @@ class _LabTestRequestState extends State<LabTestRequest> {
 
                         // Download Button - Icon only
                         Container(
-                          height: 28,
-                          margin: const EdgeInsets.only(right: 6),
+                          height: 26,
+                          margin: const EdgeInsets.only(right: 4),
                           child: IconButton(
                             onPressed: () => _downloadTestReport(request),
                             icon: Icon(
                               Icons.download,
-                              size: 16,
+                              size: 14,
                               color: const Color(0xFF2383E2),
                             ),
                             style: IconButton.styleFrom(
-                              padding: const EdgeInsets.all(6),
+                              padding: const EdgeInsets.all(5),
                               backgroundColor:
                                   const Color(0xFF2383E2).withOpacity(0.1),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6),
+                                borderRadius: BorderRadius.circular(5),
                                 side: BorderSide(
                                   color:
                                       const Color(0xFF2383E2).withOpacity(0.3),
@@ -961,20 +959,20 @@ class _LabTestRequestState extends State<LabTestRequest> {
 
                         // Call Button - Icon only
                         Container(
-                          height: 28,
+                          height: 26,
                           child: IconButton(
                             onPressed: () => _callPatient(request),
                             icon: Icon(
                               Icons.call,
-                              size: 16,
+                              size: 14,
                               color: const Color(0xFFED8936),
                             ),
                             style: IconButton.styleFrom(
-                              padding: const EdgeInsets.all(6),
+                              padding: const EdgeInsets.all(5),
                               backgroundColor:
                                   const Color(0xFFED8936).withOpacity(0.1),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6),
+                                borderRadius: BorderRadius.circular(5),
                                 side: BorderSide(
                                   color:
                                       const Color(0xFFED8936).withOpacity(0.3),
@@ -997,191 +995,200 @@ class _LabTestRequestState extends State<LabTestRequest> {
   }
 
   Widget _buildMobileTestRequestsList() {
-    return Column(
-      children: _filteredRequests.map((request) {
-        return Container(
-          margin: const EdgeInsets.only(bottom: 12),
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: const Color(0xFFF7FAFC),
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: const Color(0xFFE2E8F0)),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    request['testName'],
-                    style: const TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF2D3748),
-                    ),
-                  ),
-                  Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                    decoration: BoxDecoration(
-                      color:
-                          _getStatusColor(request['status']).withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Text(
-                      request['status'],
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: _getStatusColor(request['status']),
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Category: ${request['category']}',
-                          style: const TextStyle(
-                            fontSize: 12,
-                            color: Color(0xFF718096),
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          'Patient: ${request['patient']}',
-                          style: const TextStyle(
-                            fontSize: 12,
-                            color: Color(0xFF718096),
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          'Date: ${request['date']}',
-                          style: const TextStyle(
-                            fontSize: 12,
-                            color: Color(0xFF718096),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: _getPriorityColor(request['priority'])
-                          .withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Text(
-                      request['priority'],
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: _getPriorityColor(request['priority']),
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 4),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+    return SingleChildScrollView(
+      physics: const BouncingScrollPhysics(),
+      child: Column(
+        children: _filteredRequests.map((request) {
+          return Container(
+            margin: const EdgeInsets.only(bottom: 12),
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: const Color(0xFFF7FAFC),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: const Color(0xFFE2E8F0)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // View Button
-                    Container(
-                      height: 28,
-                      margin: const EdgeInsets.only(right: 8),
-                      child: IconButton(
-                        onPressed: () => _viewTestRequest(request),
-                        icon: const Icon(
-                          Icons.visibility,
-                          size: 14,
-                          color: Color(0xFF38A169),
+                    Expanded(
+                      child: Text(
+                        request['testName'],
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF2D3748),
                         ),
-                        style: IconButton.styleFrom(
-                          padding: const EdgeInsets.all(6),
-                          backgroundColor:
-                              const Color(0xFF38A169).withOpacity(0.1),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6),
-                            side: BorderSide(
-                              color: const Color(0xFF38A169).withOpacity(0.3),
-                              width: 1,
-                            ),
-                          ),
-                        ),
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ),
-
-                    // Download Button
                     Container(
-                      height: 28,
-                      margin: const EdgeInsets.only(right: 8),
-                      child: IconButton(
-                        onPressed: () => _downloadTestReport(request),
-                        icon: const Icon(
-                          Icons.download,
-                          size: 14,
-                          color: Color(0xFF2383E2),
-                        ),
-                        style: IconButton.styleFrom(
-                          padding: const EdgeInsets.all(6),
-                          backgroundColor:
-                              const Color(0xFF2383E2).withOpacity(0.1),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6),
-                            side: BorderSide(
-                              color: const Color(0xFF2383E2).withOpacity(0.3),
-                              width: 1,
-                            ),
-                          ),
-                        ),
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(
+                        color:
+                            _getStatusColor(request['status']).withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                    ),
-
-                    // Call Button
-                    Container(
-                      height: 28,
-                      child: IconButton(
-                        onPressed: () => _callPatient(request),
-                        icon: const Icon(
-                          Icons.call,
-                          size: 14,
-                          color: Color(0xFFED8936),
-                        ),
-                        style: IconButton.styleFrom(
-                          padding: const EdgeInsets.all(6),
-                          backgroundColor:
-                              const Color(0xFFED8936).withOpacity(0.1),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6),
-                            side: BorderSide(
-                              color: const Color(0xFFED8936).withOpacity(0.3),
-                              width: 1,
-                            ),
-                          ),
+                      child: Text(
+                        request['status'],
+                        style: TextStyle(
+                          fontSize: 10,
+                          color: _getStatusColor(request['status']),
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
                   ],
                 ),
-              ),
-            ],
-          ),
-        );
-      }).toList(),
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Category: ${request['category']}',
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: Color(0xFF718096),
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            'Patient: ${request['patient']}',
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: Color(0xFF718096),
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            'Date: ${request['date']}',
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: Color(0xFF718096),
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: _getPriorityColor(request['priority'])
+                            .withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        request['priority'],
+                        style: TextStyle(
+                          fontSize: 10,
+                          color: _getPriorityColor(request['priority']),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 4),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // View Button
+                      Container(
+                        height: 28,
+                        margin: const EdgeInsets.only(right: 8),
+                        child: IconButton(
+                          onPressed: () => _viewTestRequest(request),
+                          icon: const Icon(
+                            Icons.visibility,
+                            size: 14,
+                            color: Color(0xFF38A169),
+                          ),
+                          style: IconButton.styleFrom(
+                            padding: const EdgeInsets.all(6),
+                            backgroundColor:
+                                const Color(0xFF38A169).withOpacity(0.1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6),
+                              side: BorderSide(
+                                color: const Color(0xFF38A169).withOpacity(0.3),
+                                width: 1,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      // Download Button
+                      Container(
+                        height: 28,
+                        margin: const EdgeInsets.only(right: 8),
+                        child: IconButton(
+                          onPressed: () => _downloadTestReport(request),
+                          icon: const Icon(
+                            Icons.download,
+                            size: 14,
+                            color: Color(0xFF2383E2),
+                          ),
+                          style: IconButton.styleFrom(
+                            padding: const EdgeInsets.all(6),
+                            backgroundColor:
+                                const Color(0xFF2383E2).withOpacity(0.1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6),
+                              side: BorderSide(
+                                color: const Color(0xFF2383E2).withOpacity(0.3),
+                                width: 1,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      // Call Button
+                      Container(
+                        height: 28,
+                        child: IconButton(
+                          onPressed: () => _callPatient(request),
+                          icon: const Icon(
+                            Icons.call,
+                            size: 14,
+                            color: Color(0xFFED8936),
+                          ),
+                          style: IconButton.styleFrom(
+                            padding: const EdgeInsets.all(6),
+                            backgroundColor:
+                                const Color(0xFFED8936).withOpacity(0.1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6),
+                              side: BorderSide(
+                                color: const Color(0xFFED8936).withOpacity(0.3),
+                                width: 1,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          );
+        }).toList(),
+      ),
     );
   }
 
@@ -1429,44 +1436,44 @@ class _LabTestRequestState extends State<LabTestRequest> {
   Widget _buildStatsCards(bool isMobile, bool isTablet) {
     final statsData = [
       {
-        'title': 'Total patients',
-        'value': '12',
-        'icon': Icons.people_outline,
+        'title': 'Total Patients',
+        'value': '27',
         'gradient': const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [Color(0xFF59BDFF), Color(0xFFF1FAFF)],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Color(0xFF2C7EDB), Color(0xFFE1F0FF)],
         ),
+        'image': 'assets/images/box1.png',
       },
       {
-        'title': 'Completed',
-        'value': '8',
-        'icon': Icons.check_circle_outline,
+        'title': 'Completed Tests',
+        'value': '20',
         'gradient': const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [Color(0xFF57E3D8), Color(0xFFE3FCFA)],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Color(0xFF00B894), Color(0xFFE3FCFA)],
         ),
+        'image': 'assets/images/box2.png',
       },
       {
-        'title': 'In-waiting',
-        'value': '4',
-        'icon': Icons.access_time,
+        'title': 'Waiting Tests',
+        'value': '7',
         'gradient': const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [Color(0xFF50FFFF), Color(0xFFDFFFFF)],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Color(0xFF00C9C9), Color(0xFFDFFFFF)],
         ),
+        'image': 'assets/images/box3.png',
       },
       {
-        'title': 'Cancelled',
+        'title': 'Cancelled Tests',
         'value': '0',
-        'icon': Icons.cancel_outlined,
         'gradient': const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [Color(0xFF68EF77), Color(0xFFECFEEE)],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Color(0xFF00B83B), Color(0xFFECFEEE)],
         ),
+        'image': 'assets/images/box4.png',
       },
     ];
 
@@ -1478,8 +1485,8 @@ class _LabTestRequestState extends State<LabTestRequest> {
             child: _buildStatCard(
               title: stat['title'] as String,
               value: stat['value'] as String,
-              icon: stat['icon'] as IconData,
               gradient: stat['gradient'] as Gradient,
+              imagePath: stat['image'] as String,
               isMobile: true,
             ),
           );
@@ -1487,95 +1494,119 @@ class _LabTestRequestState extends State<LabTestRequest> {
       );
     }
 
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: isTablet ? 2 : 4,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        childAspectRatio: isTablet ? 1.8 : 2.0,
-      ),
-      itemCount: statsData.length,
-      itemBuilder: (context, index) {
-        final stat = statsData[index];
-        return _buildStatCard(
-          title: stat['title'] as String,
-          value: stat['value'] as String,
-          icon: stat['icon'] as IconData,
-          gradient: stat['gradient'] as Gradient,
-          isMobile: false,
+    return Row(
+      children: statsData.map((stat) {
+        return Expanded(
+          child: Container(
+            margin: const EdgeInsets.only(right: 10),
+            child: _buildStatCard(
+              title: stat['title'] as String,
+              value: stat['value'] as String,
+              gradient: stat['gradient'] as Gradient,
+              imagePath: stat['image'] as String,
+              isMobile: false,
+            ),
+          ),
         );
-      },
+      }).toList(),
     );
   }
 
   Widget _buildStatCard({
     required String title,
     required String value,
-    required IconData icon,
     required Gradient gradient,
+    required String imagePath,
     required bool isMobile,
   }) {
-    return GestureDetector(
-      onTap: () {
-        // Navigation logic here if needed
-      },
-      child: Container(
-        padding: EdgeInsets.all(isMobile ? 12 : 16),
-        decoration: BoxDecoration(
-          gradient: gradient,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: isMobile ? 32 : 36,
-                  height: isMobile ? 32 : 36,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.3),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child:
-                      Icon(icon, color: Colors.white, size: isMobile ? 16 : 20),
-                ),
-                Icon(Icons.arrow_forward_ios,
-                    color: Colors.white.withOpacity(0.8),
-                    size: isMobile ? 12 : 14),
-              ],
-            ),
-            Column(
+    return Container(
+      height: 140,
+      padding: const EdgeInsets.all(0),
+      decoration: BoxDecoration(
+        gradient: gradient,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Stack(
+        children: [
+          // Background Image - Adjusted size and position
+          Positioned(
+            right: 0,
+            bottom: 0,
+            child: _buildBackgroundImage(imagePath),
+          ),
+
+          // Content - Moved to bottom with left margin
+          Positioned(
+            left: 20, // Added left margin
+            bottom: 20, // Position at bottom
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
+                // Value (24) at the top - Changed color to #000000
                 Text(
                   value,
-                  style: TextStyle(
-                    fontSize: isMobile ? 20 : 24,
+                  style: const TextStyle(
+                    fontSize: 32,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Color(0xFF000000), // Changed to #000000
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 50),
+                // Title text at the bottom - Changed color to #757575
                 Text(
                   title,
-                  style: TextStyle(
-                    fontSize: isMobile ? 11 : 12,
-                    color: Colors.white.withOpacity(0.9),
+                  style: const TextStyle(
+                    fontSize: 16,
+                    color: Color(0xFF757575), // Changed to #757575
+                    fontWeight: FontWeight.w500,
                   ),
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
                 ),
               ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
+  }
+
+  Widget _buildBackgroundImage(String imagePath) {
+    return SizedBox(
+      width: 120,
+      height: 90,
+      child: Image.asset(
+        imagePath,
+        fit: BoxFit.contain,
+        errorBuilder: (context, error, stackTrace) {
+          return Container(
+            width: 120,
+            height: 90,
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.2),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Center(
+              child: Text(
+                _getImageLabel(imagePath),
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  String _getImageLabel(String imagePath) {
+    if (imagePath.contains('box1')) return 'Total Patients';
+    if (imagePath.contains('box2')) return 'Completed Tests';
+    if (imagePath.contains('box3')) return 'Waiting Tests';
+    if (imagePath.contains('box4')) return 'Cancelled Tests';
+    return 'Image';
   }
 
   void _deleteSelectedTests() {
@@ -1643,7 +1674,7 @@ class _LabTestRequestState extends State<LabTestRequest> {
                             const SnackBar(
                               content: Text('Multiple test requests deleted'),
                               backgroundColor: Color(0xFF38A169),
-                              duration: const Duration(seconds: 2),
+                              duration: Duration(seconds: 2),
                             ),
                           );
                         },
@@ -1729,7 +1760,7 @@ class _LabTestRequestState extends State<LabTestRequest> {
                             const SnackBar(
                               content: Text('New test request added'),
                               backgroundColor: Color(0xFF38A169),
-                              duration: const Duration(seconds: 2),
+                              duration: Duration(seconds: 2),
                             ),
                           );
                         },

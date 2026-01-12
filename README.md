@@ -371,3 +371,6 @@ flutter build linux
 
 # Build for Desktop (macOS)
 flutter build macos
+
+
+latest Push on 12 Jan 2026 -> MAC

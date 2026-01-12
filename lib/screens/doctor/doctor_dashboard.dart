@@ -49,39 +49,6 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
               color: const Color(0xFFF7FAFC),
               child: Column(
                 children: [
-                  // Top Bar - Only for Dashboard screen
-                  if (_selectedNavItem == 'Dashboard')
-                    Container(
-                      height: 70,
-                      color: Colors.white,
-                      padding: EdgeInsets.symmetric(
-                        horizontal: isMobile ? 16 : 30,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          // For mobile, show hamburger menu
-                          if (isMobile)
-                            IconButton(
-                              icon: const Icon(Icons.menu,
-                                  color: Color(0xFF2383E2)),
-                              onPressed: () {
-                                _showMobileSidebar(context);
-                              },
-                            ),
-
-                          // Empty space for alignment
-                          const Spacer(),
-
-                          // Add appointment button removed as per requirement
-                        ],
-                      ),
-                    ),
-
-                  // Divider - Only for Dashboard
-                  if (_selectedNavItem == 'Dashboard')
-                    Container(height: 1, color: const Color(0xFFE2E8F0)),
-
                   // Main Content
                   Expanded(
                     child: _buildSelectedContent(),
@@ -754,7 +721,8 @@ class _DoctorDashboardState extends State<DoctorDashboard> {
               child: Column(
                 children: [
                   _buildBroadcastItem('General Announcement', 'general.png'),
-                  _buildBroadcastItem('Emergency announcement', 'emergency.png'),
+                  _buildBroadcastItem(
+                      'Emergency announcement', 'emergency.png'),
                   _buildBroadcastItem('For reception message', 'reception.png'),
                   _buildBroadcastItem('For pharmacy message', 'pharmacy.png'),
                   _buildBroadcastItem('For laboratory message', 'lab.png'),
